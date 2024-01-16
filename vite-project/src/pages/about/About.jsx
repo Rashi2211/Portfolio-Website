@@ -11,43 +11,41 @@ const About = () => {
   const aboutRef = useRef(null);
 
   return (
-    <>
-      <section
-        id="about-section"
-        ref={aboutRef}
-        className="section container about"
-      >
-        <h2 className="section__title">
-          About <span>Me</span>
-        </h2>
+    <section
+      id="about-section"
+      ref={aboutRef}
+      className="section container about"
+    >
+      <h2 className="section__title">
+        About <span>Me</span>
+      </h2>
 
-        <div className="about__container grid">
-          <div className="about__info">
-            <h3 className="section__subtitle">Personal Information</h3>
+      <div className="about__container grid">
+        <div className="about__info">
+          <h3 className="section__subtitle">Personal Information</h3>
 
-            <ul className="info__list grid">
-              <Info />
-            </ul>
-            <a
-              href={Resume}
-              target="_blank"
-              rel="noreferrer"
-              className="button button__about"
-            >
-              Download Resume
-              <span className="button__icon">
-                <FaDownload />
-              </span>
-            </a>
-          </div>
-
-          <div className="stats grid">
-            <Stats />
-          </div>
+          <ul className="info__list grid">
+            <Info />
+          </ul>
+          <a
+            href={Resume}
+            target="_blank"
+            rel="noreferrer"
+            className="button button__about"
+          >
+            Download Resume
+            <span className="button__icon">
+              <FaDownload />
+            </span>
+          </a>
         </div>
-      </section>
+
+        <div className="stats grid">
+          <Stats />
+        </div>
+      </div>
       <div className="separator"></div>
-    </>
+    </section>
 
     // {/* <section className="skills">
     //   <h3 className="section__subtitle subtitle__center">My Skills</h3>
