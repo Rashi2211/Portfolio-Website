@@ -111,3 +111,27 @@
   align-items: center;
   column-gap: 8px;
 }
+
+.separator {
+  border-top: 1px solid var(--border-color);
+  max-width: 40%;
+  margin: 72px auto 56px;
+}
+
+@media screen and (max-width: 450px) {
+  #portfolio-section {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  #portfolio-section {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

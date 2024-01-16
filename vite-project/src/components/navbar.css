@@ -27,7 +27,7 @@
 
 .nav__icon,
 .nav__name {
-  color: var(--title-color);
+  color: var(--first-color);
   font-size: 24px;
 }
 .nav__name {

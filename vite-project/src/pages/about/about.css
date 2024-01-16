@@ -5,6 +5,11 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
 }
+/* .resume__container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  margin: 0px 6rem 0px 4rem;
+} */
 
 .info__list {
   row-gap: 20px;
@@ -70,14 +75,14 @@
 }
 
 .skills__container {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   row-gap: 48px;
 }
 
 .progress__circle {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
 }
 
 .CircularProgressbar-path {
@@ -168,5 +173,29 @@
 
 .resume__description {
   font-size: var(--smaller-font-size);
-  line-height: 1.6;
+  line-height: 2;
+  text-align: justify;
+  list-style: disc; /* or use 'circle' or 'square' for different bullet styles */
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .button__about {
+    margin: 0px 50px;
+  }
+  #about-section {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  #about-section {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }

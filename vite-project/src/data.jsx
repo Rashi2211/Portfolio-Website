@@ -6,6 +6,7 @@ import {
   FaBriefcase,
   FaGraduationCap,
   FaCode,
+  FaLaptopCode,
 } from "react-icons/fa";
 import { FiFileText, FiUser, FiExternalLink } from "react-icons/fi";
 
@@ -33,6 +34,7 @@ export const links = [
     name: "Home",
     icon: <FaHome className="nav__icon" />,
     path: "/",
+    sectionId: "home-section",
   },
 
   {
@@ -40,20 +42,39 @@ export const links = [
     name: "About",
     icon: <FaUser className="nav__icon" />,
     path: "/about",
+    sectionId: "about-section",
   },
 
   {
     id: 3,
-    name: "Portfolio",
-    icon: <FaFolderOpen className="nav__icon" />,
-    path: "/portfolio",
+    name: "Skills",
+    icon: <FaLaptopCode className="nav__icon" />,
+    path: "/skillsComponent",
+    sectionId: "skills-section",
   },
 
   {
     id: 4,
+    name: "Experience",
+    icon: <FaBriefcase className="nav__icon" />,
+    path: "/experience",
+    sectionId: "experience-section",
+  },
+
+  {
+    id: 5,
+    name: "Portfolio",
+    icon: <FaFolderOpen className="nav__icon" />,
+    path: "/portfolio",
+    sectionId: "portfolio-section",
+  },
+
+  {
+    id: 6,
     name: "Contact",
     icon: <FaEnvelopeOpen className="nav__icon" />,
     path: "/contact",
+    sectionId: "contact-section",
   },
 ];
 
@@ -70,44 +91,44 @@ export const personalInfo = [
     description: "Tiwari",
   },
 
-  {
-    id: 3,
-    title: "Age : ",
-    description: "28 Years",
-  },
+  // {
+  //   id: 3,
+  //   title: "Age : ",
+  //   description: "28 Years",
+  // },
 
   {
-    id: 4,
+    id: 3,
     title: "Nationality : ",
     description: "Indian",
   },
 
   {
-    id: 5,
+    id: 4,
     title: "Freelance : ",
     description: "Available",
   },
 
   {
-    id: 6,
+    id: 5,
     title: "Address : ",
     description: "40, Clydesdale Drive, North York, Ontario, Canada, M2J 3N2",
   },
 
   {
-    id: 7,
+    id: 6,
     title: "Phone : ",
     description: "+1 647-671-1601",
   },
 
   {
-    id: 8,
+    id: 7,
     title: "Email : ",
     description: "tiwarirashi22@gmail.com",
   },
 
   {
-    id: 9,
+    id: 8,
     title: "Languages : ",
     description: "English, Hindi",
   },
@@ -134,7 +155,10 @@ export const resume = [
     icon: <FaBriefcase />,
     year: "2023 - 2023",
     title: "Software Engineer Intern <span> Viral Nation </span>",
-    desc: "Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt",
+    desc: [
+      " Led React Native app development for iOS. Contributed significantly to web projects with React and GraphQL.",
+      " Developed GraphQL and PostgreSQL APIs. Integrated backend seamlessly with GraphQL. Translated Figma designs into UI/UX. Managed projects using GitHub and ClickUp.",
+    ],
   },
 
   {
@@ -143,7 +167,11 @@ export const resume = [
     icon: <FaBriefcase />,
     year: "2019 - 2022",
     title: "Senior Software Developer <span> Infosys Ltd. </span>",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    desc: [
+      " Developed dynamic web projects with React.js and Angular. Showcased proficiency in modern technologies.",
+      " Developed RESTful APIs with Node.js and Express. Integrated backend with MongoDB and PostgreSQL databases.",
+      " Designed responsive components with front-end frameworks, collaborated for successful project delivery.",
+    ],
   },
   {
     id: 3,
@@ -151,7 +179,11 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: "2023",
     title: "Post Graduate Diploma <span> Lambton College in Toronto </span>",
-    desc: "Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt",
+    desc: [
+      " Expertise in database design, normalization, and Java/Python programming.",
+      " Created dynamic web applications with HTML, CSS, and JavaScript. Explored iOS app development using React Native.",
+      " Applied software engineering principles proficiently. Managed projects efficiently with GitHub and ClickUp.",
+    ],
   },
 
   {
@@ -160,7 +192,10 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: "2017",
     title: "Bachelor of Technology <span> B.B.D.N.I.I.T.,India </span>",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore",
+    desc: [
+      " Attained a comprehensive understanding of fundamental computer science concepts. Applied theoretical knowledge to practical problem-solving and programming.",
+      " Gained proficiency in database design and management. Applied SQL for efficient data retrieval, storage, and manipulation.",
+    ],
   },
 ];
 

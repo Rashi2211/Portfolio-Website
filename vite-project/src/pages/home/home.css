@@ -13,7 +13,7 @@
   grid-template-columns: 4.32fr 7.68fr;
   align-items: center;
   padding: 40px;
-  height: 100vh;
+  overflow: hidden;
 }
 
 .home__img {
@@ -73,4 +73,32 @@
 .button {
   animation: slideInFromRight 1s ease-out forwards;
   animation-delay: 0.5s;
+}
+
+.separator {
+  border-top: 1px solid var(--border-color);
+  max-width: 40%;
+  margin: 72px auto 56px;
+}
+
+@media screen and (max-width: 450px) {
+  .button__home {
+    margin: 0px 30px;
+  }
+
+  #home-section {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  #home-section {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }

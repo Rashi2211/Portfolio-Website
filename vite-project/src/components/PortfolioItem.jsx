@@ -9,7 +9,7 @@ const PortfolioItem = ({ img, title, details }) => {
   return (
     <div className="portfolio__item">
       <img src={img} alt="" className="portfolio__img" />
-      <div className="portfolio__hover" onClick={toggleModal}>
+      <div className="portfolio__hover" onMouseEnter={toggleModal}>
         <h3 className="portfolio__title">{title}</h3>
       </div>
       {showModal && (

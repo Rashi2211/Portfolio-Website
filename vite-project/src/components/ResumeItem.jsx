@@ -7,7 +7,15 @@ const ResumeItem = ({ icon, year, title, desc }) => {
       <div className="resume__icon">{icon}</div>
       <span className="resume__date">{year}</span>
       <h3 className="resume__subtitle">{parse(title)}</h3>
-      <p className="resume__description">{desc}</p>
+      {Array.isArray(desc) ? (
+        <ul className="resume__description">
+          {desc.map((point, index) => (
+            <li key={index}>{parse(point)}</li>
+          ))}
+        </ul>
+      ) : (
+        <p className="resume__description">{parse(desc)}</p>
+      )}
     </div>
   );
 };
