@@ -22,12 +22,12 @@ const Home = () => {
             using my skills. I am a quick learner and always ready to learn new
             technologies.
           </p>
-          <Link to="#about-section" className="button button__home">
+          <a href="#about-section" className="button button__home">
             To know more about me {""}
             <span className="button__icon">
               <FaArrowRight />
             </span>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="separator"></div>
